@@ -9,6 +9,13 @@ const ingredients = [
 
 const listIngredients = document.querySelector("#ingredients");
 
-const firstElem = document.createElement("li");
-firstElem.textContent = "Potatoes";
-listIngredients.append(firstElem);
+function createProducts(arr) {
+  const markup = arr.map((ingredient) => {
+    const itemElem = document.createElement("li");
+    itemElem.textContent = ingredient;
+    listIngredients.append(itemElem);
+    itemElem.classList.add("item");
+    return itemElem;
+  });
+}
+createProducts(ingredients);
