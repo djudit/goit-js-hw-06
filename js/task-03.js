@@ -29,3 +29,9 @@ function createGallery(arr) {
   listPictures.insertAdjacentHTML("beforeend", markup);
 }
 createGallery(images);
+
+listPictures.style.listStyle = "none";
+listPictures.style.display = "flex";
+listPictures.style.justifyContent = "space-around";
+listPictures.style.flexWrap = "wrap";
+listPictures.style.rowGap = "30px";

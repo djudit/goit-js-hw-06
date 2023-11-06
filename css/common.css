@@ -22,13 +22,3 @@ button {
   padding: 8px 12px;
   cursor: pointer;
 }
-
-/* task-03 */
-
-.gallery {
-  list-style: none;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  row-gap: 30px;
-}
