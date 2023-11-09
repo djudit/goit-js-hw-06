@@ -20,6 +20,5 @@ function handleSubmit(event) {
 
   console.log(objUser);
 
-  alert(`Email: ${email.value}, Password: ${password.value}`);
   form.reset();
 }
